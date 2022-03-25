@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style-level5.css">
+</head>
+
+
+<body>
+
+<button id="restarter" onclick="restartGame()"> Restart From Level 1 </button>
+
+
+<div class="game-info-container">
+    <div id="time-div" class="game-info">
+      Countdown : <span  id="time-remaining"> 30 </span>
+    </div>
+    <div id="score-div" class="game-info">
+        Score :  <span id="score">0</span>/6
+    </div>
+    <div id="flips-div" class="game-info">
+        Number of Flips :  <span id="flips"> 0 </span>
+    </div>
+    <div id="level-div" class="game-info">
+        Level : <span id="current-level"> 5 </span>
+    </div>
+    <div id="my-div" class="game-info" style="line-height: 1.4;">
+        Developed by <br> &nbsp; Alaa Doukh
+    </div>
+</div>
+
+<div id="game-over" class="overlay-text" onclick="reloadPage()" onmouseover="changeCursor()"> 
+    GAME OVER 
+    <span class="overlay-text-small">Click anywhere to restart</span>
+</div>
+
+<div id="winner" class="overlay-text" onclick="restartGame()" onmouseover="changeCursor()"> 
+    YOU WON 
+    <span class="overlay-text-small">Click to play again</span>
+</div>
+
+<div class="field">
+
+    <h2 class="game-title"> Memory Card Game </h2>
+
+    <div class="game">
+        <div class="card" data-content="okay">
+            <img class="front" src="images/hand-all-okay-gesture.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="okay">
+            <img class="front" src="images/hand-all-okay-gesture.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="grip">
+            <img class="front" src="images/hand-grip.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="grip">
+            <img class="front" src="images/hand-grip.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="three">
+            <img class="front" src="images/hand-gun-sign.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="three">
+            <img class="front" src="images/hand-gun-sign.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="two">
+            <img class="front" src="images/hand-peace-sign.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="two">
+            <img class="front" src="images/hand-peace-sign.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="five">
+            <img class="front" src="images/hand-palm.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="five">
+            <img class="front" src="images/hand-palm.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="point">
+            <img class="front" src="images/hand-poiting.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="point">
+            <img class="front" src="images/hand-poiting.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

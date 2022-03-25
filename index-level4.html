@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style-level4.css">
+</head>
+
+
+<body>
+
+<button id="restarter" onclick="restartGame()"> Restart From Level 1 </button>
+
+<div class="game-info-container">
+    <div id="time-div" class="game-info">
+      Countdown : <span  id="time-remaining"> 25 </span>
+    </div>
+    <div id="score-div" class="game-info">
+        Score :  <span id="score">0</span>/5
+    </div>
+    <div id="flips-div" class="game-info">
+        Number of Flips :  <span id="flips"> 0 </span>
+    </div>
+    <div id="level-div" class="game-info">
+        Level : <span id="current-level"> 4 </span>
+    </div>
+    <div id="my-div" class="game-info">
+        Developed by Alaa Doukh
+    </div>
+</div>
+
+<div id="game-over" class="overlay-text" onclick="reloadPage()" onmouseover="changeCursor()"> 
+    GAME OVER 
+    <span class="overlay-text-small">Click anywhere to restart</span>
+</div>
+
+<div class="field">
+
+    <h2 class="game-title"> Memory Card Game </h2>
+
+    <div class="game">
+        <div class="card" data-content="astronaut">
+            <img class="front" src="images/astronaut.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="astronaut">
+            <img class="front" src="images/astronaut.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="sat">
+            <img class="front" src="images/satellite.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>   
+        <div class="card" data-content="sat">
+            <img class="front" src="images/satellite.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div> 
+        <div class="card" data-content="gun">
+            <img class="front" src="images/laser-gun.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="gun">
+            <img class="front" src="images/laser-gun.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="capsule">
+            <img class="front" src="images/space-capsule.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="capsule">
+            <img class="front" src="images/space-capsule.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="rover">
+            <img class="front" src="images/space-rover.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="rover">
+            <img class="front" src="images/space-rover.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

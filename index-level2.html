@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style-level2.css">
+</head>
+
+
+<body>
+
+<button id="restarter" onclick="restartGame()"> Restart From Level 1 </button>
+
+<div class="game-info-container">
+    <div id="time-div" class="game-info">
+      Countdown : <span  id="time-remaining"> 15 </span>
+    </div>
+    <div id="score-div" class="game-info">
+        Score :  <span id="score">0</span>/3
+    </div>
+    <div id="flips-div" class="game-info">
+        Number of Flips :  <span id="flips"> 0 </span>
+    </div>
+    <div id="level-div" class="game-info">
+        Level : <span id="current-level"> 2 </span>
+    </div>
+    <div id="my-div" class="game-info">
+        Developed by Alaa Doukh
+    </div>
+</div>
+
+<div id="game-over" class="overlay-text" onclick="reloadPage()" onmouseover="changeCursor()"> 
+    GAME OVER 
+    <span class="overlay-text-small">Click anywhere to restart</span>
+</div>
+
+<div class="field">
+
+    <h2 class="game-title"> Memory Card Game </h2>
+
+    <div class="game">
+        <div class="card" data-content="adventure">
+            <img class="front" src="images/adventure.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="adventure">
+            <img class="front" src="images/adventure.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>
+        <div class="card" data-content="gate">
+            <img class="front" src="images/delhi-gate.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div>   
+        <div class="card" data-content="gate">
+            <img class="front" src="images/delhi-gate.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div> 
+        <div class="card" data-content="diary">
+            <img class="front" src="images/diary.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div> 
+        <div class="card" data-content="diary">
+            <img class="front" src="images/diary.png" alt="Memory Card">
+            <img class="back" src="images/question.png" alt="Memory Card">
+        </div> 
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
